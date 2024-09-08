@@ -141,4 +141,56 @@ nav ul li a:hover {
 }
 
 .social-links {
-    list-style: none
+    list-style: none;
+    padding: 0;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-item {
+        width: 45%;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .project-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
